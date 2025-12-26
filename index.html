@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS ANAMUL Premium Page</title>
+    <style>
+        body {
+            font-family: 'Impact', Arial, sans-serif;
+            background: #000000;
+            color: #fff;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            min-height: 100vh;
+            animation: full-color-glow 8s infinite;
+        }
+
+        @keyframes full-color-glow {
+            0% { box-shadow: 0 0 50px #ff0000; background: #000; }
+            14% { box-shadow: 0 0 80px #0000ff; }
+            28% { box-shadow: 0 0 80px #ffff00; }
+            42% { box-shadow: 0 0 80px #800080; }
+            56% { box-shadow: 0 0 80px #ff00ff; }
+            70% { box-shadow: 0 0 80px #00ffff; }
+            85% { box-shadow: 0 0 80px #00ff00; }
+            100% { box-shadow: 0 0 50px #ff0000; }
+        }
+
+        .profile-pic-container {
+            position: relative;
+            margin: 30px auto;
+            width: 250px;
+            height: 250px;
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 60px #ff00ff, 0 0 120px #00ffff;
+            border: 8px solid #ff00ff;
+            animation: profile-dazzle 5s infinite alternate;
+        }
+
+        @keyframes profile-dazzle {
+            0% { box-shadow: 0 0 60px #ff0000, 0 0 120px #ffff00; }
+            25% { box-shadow: 0 0 60px #0000ff, 0 0 120px #800080; }
+            50% { box-shadow: 0 0 60px #ff00ff, 0 0 120px #00ffff; }
+            75% { box-shadow: 0 0 60px #00ff00, 0 0 120px #ff0000; }
+            100% { box-shadow: 0 0 60px #ffff00, 0 0 120px #ff00ff; }
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff, 0 0 90px #ffff00;
+            font-size: 2.8em;
+            margin: 40px 0;
+            animation: premium-glow 4s infinite alternate;
+        }
+
+        .premium-text {
+            font-size: 1.6em;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-shadow: 
+                0 0 10px #ff00ff,
+                0 0 20px #ff00ff,
+                0 0 30px #00ffff,
+                0 0 40px #00ffff,
+                0 0 50px #ffff00;
+            animation: premium-glow 3s infinite alternate;
+            margin: 25px 0;
+        }
+
+        .section-title {
+            font-size: 2.8em;
+            font-weight: bold;
+            letter-spacing: 6px;
+            text-shadow: 
+                0 0 15px #ff00ff,
+                0 0 30px #00ffff,
+                0 0 45px #ffff00,
+                0 0 60px #ff0000;
+            animation: premium-glow 4s infinite alternate;
+            margin: 80px 0 60px 0;
+        }
+
+        @keyframes premium-glow {
+            from {
+                text-shadow: 
+                    0 0 10px #ff00ff,
+                    0 0 20px #ff00ff,
+                    0 0 30px #00ffff;
+            }
+            to {
+                text-shadow: 
+                    0 0 20px #ff00ff,
+                    0 0 40px #00ffff,
+                    0 0 60px #ffff00,
+                    0 0 80px #ff0000;
+            }
+        }
+
+        .download-list {
+            list-style: none;
+            padding: 0;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .download-item {
+            margin: 35px 0; /* অল্প বাটনের জন্য স্পেস বাড়ানো */
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 20px 40px; /* বড় করে দিয়েছি যেন প্রিমিয়াম লাগে */
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 1.8em;
+            box-shadow: 0 0 30px #ffff00;
+            transition: all 0.3s;
+        }
+
+        .download-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 60px #ff0000;
+        }
+
+        .premium-logo {
+            width: 250px;
+            height: 250px;
+            margin: 80px auto;
+            animation: spin 8s linear infinite;
+            object-fit: contain;
+            box-shadow: 0 0 60px #ff00ff, 0 0 120px #00ffff;
+            border-radius: 50%;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .follow-links {
+            margin: 80px 0 100px 0;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .social-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .social-button:hover {
+            transform: scale(1.2);
+        }
+
+        .social-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 30px #ff00ff;
+            border-radius: 20px;
+        }
+
+        .social-text {
+            font-size: 1.2em;
+            text-shadow: 0 0 15px #00ffff;
+        }
+    </style>
+    <script>
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.9;
+                utterance.pitch = 1.1;
+                utterance.volume = 1;
+
+                const voices = speechSynthesis.getVoices();
+                const goodVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Google') || v.name.includes('Premium'))) || voices[0];
+                if (goodVoice) utterance.voice = goodVoice;
+
+                speechSynthesis.speak(utterance);
+            }
+        }
+
+        document.body.addEventListener('touchstart', function welcomeTouch() {
+            speak('Welcome to my page, AS ANAMUL');
+            this.removeEventListener('touchstart', welcomeTouch);
+        }, { once: true });
+
+        document.body.addEventListener('click', function welcomeClick() {
+            speak('Welcome to my page, AS ANAMUL');
+            this.removeEventListener('click', welcomeClick);
+        }, { once: true });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.download-button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    speak('High quality premium quality. No one has done this till now');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="profile-pic-container">
+        <img src="https://i.supaimg.com/a4b49a99-3b63-4f86-b39e-21e9d9157864.jpg" alt="AS ANAMUL" class="profile-pic">
+    </div>
+
+    <h1>AS ANAMUL PREMIUM</h1>
+
+    <div class="intro">
+        <p class="premium-text">Hi, I am AS ANAMUL.</p>
+        <p class="premium-text">I Provide Premium FF Tools & Files.</p>
+    </div>
+
+    <h2 class="section-title">My Premium Downloads</h2>
+
+    <ul class="download-list">
+        <li class="download-item"><a href="https://t.me/DOYAL_BABA_PANEL" class="download-button">Download ALL FILE</a></li>
+        <li class="download-item"><a href="https://shrinkme.click/vFFkMj" class="download-button">MT Manager</a></li>
+        <li class="download-item"><a href="https://t.me/DOYAL_BABA_PANEL" class="download-button">All Hack</a></li>
+        <li class="download-item"><a href="https://t.me/DOYAL_BABA_PANEL" class="download-button">Proxy Server</a></li>
+    </ul>
+
+    <img src="https://i.supaimg.com/ea10b517-e85d-4038-b4b9-d030a4e193bf.png" alt="AS ANAMUL Rotating Logo" class="premium-logo">
+
+    <div class="follow-links">
+        <a href="https://t.me/DOYAL_BABA_PANEL" class="social-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="social-icon">
+            <span class="social-text">Join Telegram</span>
+        </a>
+        <a href="https://www.youtube.com/@%E0%A6%A6%E0%A7%9F%E0%A6%BE%E0%A6%B2_%E0%A6%AC%E0%A6%BE%E0%A6%AC%E0%A6%BE1" class="social-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" class="social-icon">
+            <span class="social-text">Subscribe YouTube</span>
+        </a>
+        <a href="https://www.facebook.com/anamulp587" class="social-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+            <span class="social-text">Follow Facebook</span>
+        </a>
+    </div>
+</body>
+</html>
